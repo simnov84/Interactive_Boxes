@@ -1,0 +1,54 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .box-container {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .options {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .box.expanded {
+    height: 250px;
+  }
+  
+  .box.expanded .options {
+    display: block;
+  }
+  
